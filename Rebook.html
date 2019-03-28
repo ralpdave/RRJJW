@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>  Travel HomeLand</title>
+
+<link rel="stylesheet" type="text/css" href="TTravel2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+
+ .navbar {
+  overflow: hidden;
+  background-color: #333; 
+  padding:2px;
+  opacity: 0.80%;
+  padding-right: 20px;
+  height: 50px;
+  width: 100%;
+  border-radius: 20px;
+ 
+}
+.navbar img {
+
+  height: 45px;
+  width: 45px;
+  border-radius: 20%;
+}
+.navbar li{
+  float: right;
+ list-style-type: none;
+ text-decoration: none;
+
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius:2px;
+
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.GIF img{
+
+  height: 250px;
+  width: 80%;
+  padding-left: 110px;
+  text-decoration: none;
+
+/*
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-right: 50px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  padding-right: 15px
+  border: 2px double #333;
+
+
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+td  {
+  padding: 10px;
+  margin-left: 250px;
+    background-color:  #8fe8c1;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100px;
+  border: solid;
+  text-align: center;
+
+}
+th{
+  color:  #f2f2f2;
+background-color: #333; 
+border: double;
+
+}
+#Buton a{
+text-decoration: none;
+  list-style-type: none;
+ 
+
+}
+#Buton{
+  padding: 2px;
+  background-color:#2cf9a9;
+  margin-left: 15px;
+ border: solid black;
+   width: 40px;
+  height: 20px;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+#Buton:hover{
+background-color: #4af9f7;
+color: white;
+/*opacity: 0.80%;*/
+
+/*}
+#Butan a{
+text-decoration: none;
+  list-style-type: none;
+
+}
+#Butan{
+  padding: 0px;
+  background-color:#2cf9a9;
+border: solid black;
+  margin-left: 0px;
+   width: 20px;
+  height: 10px;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+#Butan:hover{
+background-color: #4af9f7;
+color: white;
+opacity: 0.80%;
+
+}
+#Butin a{
+text-decoration: none;
+  list-style-type: none;
+ }
+ #Butin{
+  padding: 0px;
+border: solid black;
+
+  background-color:#2cf9a9;
+  margin-left: 4px;
+
+   width: 20px;
+  height: 10px;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+#Butin:hover{
+background-color: #4af9f7;
+color: white;
+opacity: 0.80%;
+*/
+}.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+   opacity: 0.90;
+   margin-top: 10px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+  opacity: 0.80;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-right: 50px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  padding-right: 15px
+  border: 2px double #333;
+
+
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+td  {
+  padding: 10px;
+  margin-left: 250px;
+    background-color:  #8fe8c1;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100px;
+  border: solid;
+  text-align: center;
+
+}
+th{
+  color:  #f2f2f2;
+background-color: #333; 
+border: double;
+
+}
+#Buton a{
+text-decoration: none;
+  list-style-type: none;
+ 
+
+}
+#Buton{
+  padding: 2px;
+  background-color:#2cf9a9;
+  margin-left: 1px;
+ border: solid black;
+   width: 72px;
+  height: 40px;
+  text-decoration: none;
+  list-style-type: none;
+ float: right;
+}
+#Buton:hover{
+background-color: #4af9f7;
+color: white;
+/*opacity: 0.80%;*/
+
+}
+#Butan a{
+text-decoration: none;
+  list-style-type: none;
+
+}
+#Butan{
+  padding: 0px;
+  background-color:#2cf9a9;
+border: solid black;
+  margin-right: 4px;
+   width: 72px;
+  height: 40px;
+  text-decoration: none;
+  list-style-type: none;
+  float: right;
+
+}
+#Butan:hover{
+background-color: #4af9f7;
+color: white;
+opacity: 0.80%;
+
+}
+#Butin a{
+text-decoration: none;
+  list-style-type: none;
+ }
+ #Butin{
+  padding: 0px;
+border: solid black;
+  margin-right: 5px;
+  width: 72px;
+  height: 40px;
+  background-color:#2cf9a9;
+
+ float: right;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+#Butin:hover{
+background-color: #4af9f7;
+color: white;
+opacity: 0.80%;
+
+}
+*/
+.dropbtn {
+  background-color: yellow;
+  color: black;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+   text-decoration: none;
+  list-style-type: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-right: 3px;
+   text-decoration: none;
+  list-style-type: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: white;}
+
+</style>
+
+<body>
+
+
+<nav> 
+
+  <div class="navbar">
+
+ 
+    <img src="logo.png"  >
+     <img src="airasia.jpg"  height="70" width="70" >
+        <img src="cebupac.jpg"  height="70" width="70" > 
+        <img src="philair.jpg"  height="70" width="70" >
+        <img src="zest.jpg"  height="70" width="70" >
+
+<li> <a href="Rebook.html"><i class="glyphicon glyphicon-edit"></i>Manage Booking</a></li>
+                                                            
+ <li> <a href="book.html"><i class="glyphicon glyphicon-book"></i>Booking</a></li> 
+ <li><a href="TTravel2.html"><i class="fa fa-fw fa-home"></i> Home </a></li> 
+  
+</div>
+
+</nav>
+
+<button class="accordion"><strong>First passenger  <i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-circle-arrow-down"></i>  <i class="glyphicon glyphicon-circle-arrow-up"></i></strong></button>
+<div class="panel">
+
+
+ <table>
+  <tr>
+    <th>Fullname</th>
+     <th>Contact Number</th>
+      <th>City</th>
+       <th>Destination</th>
+        <th>Arrival</th>
+         <th>Name on card</th>
+          <th>Credit card number</th>
+           <th>Departure</th>
+            <th>Returning</th>
+            <th>Baggage</th>
+            <th>Add Baggage</th>
+
+        
+  
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>09354578321</td>
+    <td>50</td>
+    <td>Cagayan de Oro City</td>
+    <td>Manila</td>
+    <td>wael</td>
+     <td>awe</td>
+   <td>01-01-01</td>
+    <td>02-02-02</td>
+    <td>3kls</td>
+    <td>5kls</td>
+    <td>  <a id="Buton" href="passengerinfo.html">Edit Flight</a>  <br>
+                 <a  id="Butan" href="#" onclick="alert('Are you sure you want to Cancel your flight')">Cancel Flight</a><br>
+                   <a  id="Butin" href="viewticket.html">View Tickets</a>
+                 </td>
+        
+
+  </tr>
+  
+</table>
+
+
+
+
+
+
+
+</div>
+
+<button class="accordion"><strong>Second passenger  <i class="glyphicon glyphicon-user"></i>  <i class="glyphicon glyphicon-circle-arrow-down"></i>  <i class="glyphicon glyphicon-circle-arrow-up"></i></strong></button>
+<div class="panel">
+                <table>
+  <tr>
+    <th>Fullname</th>
+     <th>Contact Number</th>
+      <th>City</th>
+       <th>Destination</th>
+        <th>Arrival</th>
+         <th>Name on card</th>
+          <th>Credit card number</th>
+           <th>Departure</th>
+            <th>Returning</th>
+            <th>Baggage</th>
+            <th>Add Baggage</th>
+        
+  
+  
+  <tr>
+    <td>Eve</td>
+    <td>09164578321</td>
+    <td>94</td>
+    <td>Davao City</td>
+    <td>Manila</td>
+    <td>wael</td>
+     <td>awe</td>
+   <td>01-01-01</td>
+    <td>02-02-02</td>
+    <td>3kls</td>
+    <td>5kls</td>
+     <td><a id="Buton"  href="passengerinfo.html">Edit Flight</a><br><br>
+             <a  id="Butan" href="#" onclick="alert('Are you sure you want to Cancel your flight')">Cancel Flight</a>
+               <a  id="Butin" href="viewticket.html">View Tickets</a>
+    </td>
+  </tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+<button class="accordion"><strong>Third Passenger  <i class="glyphicon glyphicon-user"></i>  <i class="glyphicon glyphicon-circle-arrow-down"></i>  <i class="glyphicon glyphicon-circle-arrow-up"></i></strong></button>
+<div class="panel">
+               <table>
+  <tr>
+    <th>Fullname</th>
+     <th>Contact Number</th>
+      <th>City</th>
+       <th>Destination</th>
+        <th>Arrival</th>
+         <th>Name on card</th>
+          <th>Credit card number</th>
+           <th>Departure</th>
+            <th>Returning</th>
+            <th>Baggage</th>
+            <th>Add Baggage</th>
+        
+  
+ 
+        
+
+ 
+  
+
+  <tr>
+    <td>Adam</td>
+    <td>09756987421</td>
+    <td>67</td>
+    <td>Cebu City</td>
+   <td>Manila</td>
+    <td>wael</td>
+     <td>awe</td>
+   <td>01-01-01</td>
+    <td>02-02-02</td>
+    <td>3kls</td>
+    <td>5kls</td>
+
+   <td><a id="Buton" href="passengerinfo.html">Edit Flight</a><br><br>
+           <a  id="Butan" href="#" onclick="alert('Are you sure you want to Cancel your flight')">Cancel Flight</a>
+            <a  id="Butin" href="viewticket.html">View Tickets</a>
+  </td>
+  </tr>
+  
+</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+<!-- <table>
+  <tr>
+    <th>Fullname</th>
+     <th>Contact Number</th>
+      <th>City</th>
+       <th>Destination</th>
+        <th>Arrival</th>
+         <th>Name on card</th>
+          <th>Credit card number</th>
+           <th>Departure</th>
+            <th>Returning</th>
+            <th>Baggage</th>
+            <th>Add Baggage</th>
+              <th>Option</th>
+  
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+    <td>Cagayan de Oro City</td>
+    <td>Manila</td>
+    <td>wael</td>
+     <td>awe</td>
+   <td>01-01-01</td>
+    <td>02-02-02</td>
+    <td>3kls</td>
+    <td>5kls</td>
+        <td><a id="Buton" href="passengerinfo.html">Edit Flight</a> <br> <br>
+                 <a  id="Butan" href="#" onclick="alert('Are you sure you want to Cancel your flight')">Cancel Flight</a> <br> <br>
+                   <a  id="Butin" href="viewticket.html">View Tickets</a>
+
+        </td>
+
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+    <td>Davao City</td>
+    <td>Manila</td>
+    <td>wael</td>
+     <td>awe</td>
+   <td>01-01-01</td>
+    <td>02-02-02</td>
+    <td>3kls</td>
+    <td>5kls</td>
+     <td><a id="Buton"  href="passengerinfo.html">Edit Flight</a><br> <br>
+             <a  id="Butan" href="#" onclick="alert('Are you sure you want to Cancel your flight')">Cancel Flight</a> <br> <br>
+               <a  id="Butin" href="viewticket.html">View Tickets</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Adam</td>
+    <td>Johnson</td>
+    <td>67</td>
+    <td>Cebu City</td>
+   <td>Manila</td>
+    <td>wael</td>
+     <td>awe</td>
+   <td>01-01-01</td>
+    <td>02-02-02</td>
+    <td>3kls</td>
+    <td>5kls</td>
+
+   <td><a id="Buton" href="passengerinfo.html">Edit Flight</a><br> <br> 
+           <a  id="Butan" href="#" onclick="alert('Are you sure you want to Cancel your flight')">Cancel Flight</a> <br><br> 
+            <a  id="Butin" href="viewticket.html">View Tickets</a> 
+  </td>
+  </tr>
+    <tr>
+    <td>Ralp</td>
+    <td>tuto</td>
+    <td>19</td>
+    <td>Gingoog City</td>
+   <td>Manila</td>
+    <td>wael</td>
+     <td>awe</td>
+   <td>01-01-01</td>
+    <td>02-02-02</td><td>3kls</td>
+    <td>5kls</td>
+  <td><a   id="Buton" href="passengerinfo.html">Edit Flight</a><br><br> 
+        <a  id="Butan" href="#" onclick="alert('Are you sure you want to Cancel your flight')">Cancel Flight</a> <br> <br> 
+         <a  id="Butin" href="viewticket.html">View Tickets</a>
+  </td>
+           
+  </tr>
+</table>
+ -->
+
+
+
+
+</body>
+</html>

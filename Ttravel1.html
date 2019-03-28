@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TTtravel</title>
+	<link rel="stylesheet" type="text/css" href="tata.css">
+  
+<body>
+
+<nav>
+   
+
+
+    
+
+
+</nav>
+              <style type="text/css">
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    filter: blur(8px;); -webkit-filter: blur(8px);
+}
+.login-box{
+    margin-top: 50px;
+    width: 334px;
+    height: 360px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 80px 30px;
+}
+.avatar{
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    
+  left: calc(32% );
+}
+
+h1{
+    margin-top: 50px;
+    width: 435px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 465px;
+    border-radius: 15px;
+    position: absolute;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 43px;
+    color: #fff;
+    font-size: 13px;
+}
+.login-box input[value="Log In"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: limegreen;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 275px;
+    margin: 0 0 20px 0;
+}
+.login-box button: hover{
+    cursor: pointer;
+    background: #39dc78;
+    color: #f0f343;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    font-family: "century gothic";
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+    </style> 
+    <script type="text/javascript">
+        function tuplok(){
+
+        var username = document.getElementById("user").value;
+        var password = document.getElementById("pass").value;
+
+        if(username == "admin" && password == "admin"){
+            window.location = "TTravel2.html";
+        }else{
+            alert("Invalid Password ");
+        }}
+    </script>
+</head>
+    <body> <img src="#" class="bg-image">
+    <h1>Flight Reservation System</h1>
+    <div class="login-box">
+    <img src="avatar.png" class="avatar">
+            <form>
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter username" id="user">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter password" id="pass">
+            <input type="button" name="Log In" value="Log In" onclick="tuplok()"></input>
+            <a href="#">Forget Password</a>    
+            </form>
+        
+
+
+  </div>
+
+</body>
+</html>

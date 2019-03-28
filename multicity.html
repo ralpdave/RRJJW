@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>  Travel HomeLand</title>
+
+
+<!-- <link rel="stylesheet" type="text/css" href="TTravel2.css"> -->
+<link rel="stylesheet" type="text/css" href="PopUP.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+body {
+  background-image: url('build.jpg');
+}
+
+ .navbar {
+  overflow: hidden;
+  background-color: #333; 
+  padding:2px;
+  opacity: 0.80%;
+  padding-right: 100px;
+  height: 50px;
+  width: 100%;
+  border-radius: 20px;
+ 
+}
+.navbar img {
+
+  height: 45px;
+  width: 45px;
+  border-radius:  20%;
+}
+.navbar li{
+  float: right;
+ list-style-type: none;
+ text-decoration: none;
+
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius:2px;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+   border-radius:2px;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+.price{
+
+  padding-left:50px ;
+  margin:10px;
+}
+.image{
+
+
+  float:left;
+  padding-left:55px;
+
+}
+button{
+
+  border-radius:1px;
+  border:2px solid green; 
+
+}
+.navbar a:hover, .other:hover .dropbtn {
+  background-color: red;
+}
+
+.other-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 85px;
+ 
+}
+
+.other-content a {
+  float: none;
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius:2px;
+}
+
+.other-content a:hover {
+  background-color: #ddd;
+}
+
+.other:hover .dropdown-content {
+  display: block;
+  border-radius:2px;
+}
+
+.other {
+  overflow: hidden;
+  background-color: #333; 
+ 
+  padding:20px;
+  opacity:0.8;
+  padding-right:50px;
+ 
+}
+
+.other a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius:2px;
+
+}
+.search a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+
+ 
+}
+.search{
+  padding: 10px;
+  margin-left: 188px;
+  background-color: yellow;
+  
+  border-radius: 10px;
+   width: 100px;
+  height: 50px;
+}
+
+
+
+
+</style>
+
+<body>
+
+
+<nav> 
+
+  <div class="navbar">
+<img src="logo.png"  height="70" width="70" >
+    <img src="airasia.jpg"  height="70" width="70" >
+        <img src="cebupac.jpg"  height="70" width="70" > 
+        <img src="philair.jpg"  height="70" width="70" >
+        <img src="zest.jpg"  height="70" width="70" >
+
+
+
+  <a href="Rebook.html"><i class="glyphicon glyphicon-edit"></i> Manage Booking</a>
+  
+  <a href="book.html"><i class="glyphicon glyphicon-book"></i>Booking</a>
+ <a href="TTravel2.html"><i class="glyphicon glyphicon-home"></i> Home </a>
+  
+  
+</div>
+
+
+</nav>
+
+
+
+
+
+  <div class="book">
+
+    <nav class="other">
+      <a href="multicity.html"> MULTI CITY </a>
+       <a href="roundtrip.html" >ROUND TRIP | </a>
+      <a href="book.html"> ONE WAY | </a>            
+          
+
+    </nav>
+
+
+
+
+
+
+<body>
+
+
+
+
+
+    <div class="data">
+
+ <br>
+ <br>
+
+   <strong>Destination</strong><input list="from" name="from">
+  <datalist id="from">
+    <option value="manila">
+    <option value="legazpi">
+    <option value="cauayan">
+    <option value="mactan,cebu">
+    <option value="busuanga">
+    <option value="surigao">
+    <option value="davao">
+    <option value="dumaguete">
+    <option value="virac">
+    <option value="puerto princesa">
+    <option value="clark">
+    <option value="catarman">
+    <option value="kalib,boracay">
+    <option value="san jose,mindoro">
+  </datalist>
+    <strong>Arrival</strong><input list="to" name="to">
+  <datalist id="to">
+    <option value="manila">
+    <option value="legazpi">
+    <option value="cauayan">
+    <option value="mactan,cebu">
+    <option value="busuanga">
+    <option value="surigao">
+    <option value="davao">
+    <option value="dumaguete">
+    <option value="virac">
+    <option value="puerto princesa">
+    <option value="clark">
+    <option value="catarman">
+    <option value="kalib,boracay">
+    <option value="san jose,mindoro">
+  </datalist>
+  <br>
+ <br>
+ <br>
+  <br>
+   <br>
+ 
+    <strong>Date <i class="glyphicon glyphicon-calendar"></i> </strong>
+    <input type="Date" name="Date">
+   <strong> Class</strong>
+  <select>
+  <option value="Economy">Economy</option>
+  <option value="Business">Business</option>
+ 
+</select>   
+ <br>
+ <br>
+
+
+<strong>Age</strong>
+
+<br>
+ <br>
+<strong>Child <i class="glyphicon glyphicon-chevron-down"></i></strong>
+<select >
+  
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  
+
+  
+</select>
+<strong>Adult <i class="glyphicon glyphicon-chevron-down"></i></strong>
+<select>
+  
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  
+
+
+</select><strong>Infant <i class="glyphicon glyphicon-chevron-down"></i></strong>
+<select>
+  
+  <option>1</option>
+  <option>2</option>
+</select>
+ <br> <br>
+ 
+  
+ <br>
+
+<div class="search"><a href="Searchflight.html"><i  class="glyphicon glyphicon-plane"></i><br>Search Fight</a></div>
+
+
+  </div>
+
+  </div>
+
+
+</body>
+</html>

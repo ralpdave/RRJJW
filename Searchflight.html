@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Search Fight </title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<style>
+
+ 
+body{
+	background-image: url(flights.jpg ) 
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+  padding:2px;
+  opacity: 0.80%;
+  padding-right: 20px;
+  height: 50px;
+  width: 100%;
+  border-radius: 20px;
+ 
+}
+.navbar img {
+
+  height: 45px;
+  width: 45px;
+  border-radius:  20%;
+}
+.navbar li{
+  float: right;
+ list-style-type: none;
+ text-decoration: none;
+
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius:2px;
+
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+   border-radius:2px;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+.price{
+
+	padding-left:50px ;
+	margin:10px;
+
+}
+.image{
+
+
+	float:left;
+	padding-left:55px;
+	padding-top: 10px;
+
+
+}
+.image .part{
+	padding: 10px;
+	margin-right:50px;
+	background-color: yellow;
+	text-decoration: none;
+	list-style-type: none;
+	border-radius: 20px;
+}
+.image .part a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+	
+}
+.image {
+	border:2px; 
+}
+p {
+	font-weight: bold;
+	color: black;
+	background-color: white;
+	text-align: center;
+	margin-right: 25px;
+	margin-left: -15px;
+
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: #333;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+
+
+</style>
+
+<body>
+
+
+<nav> 
+
+	<div class="navbar">
+<img src="logo.png"  >
+<img src="airasia.jpg"  height="70" width="70" >
+   <img src="cebupac.jpg"  height="70" width="70" > 
+    <img src="philair.jpg"  height="70" width="70" >
+     <img src="zest.jpg"  height="70" width="70" >
+   
+ 
+   <div class="dropdown">
+    
+   
+  </div> 
+  <a href="Rebook.html"><i class="glyphicon glyphicon-edit"></i> Rebook</a>
+   
+  <a href="book.html"><i class="glyphicon glyphicon-book"></i>Booking</a>
+ <a href="TTravel2.html"><i class="glyphicon glyphicon-home"></i> Home </a>
+  
+</div>
+<br>
+
+
+
+</nav>
+<main> 
+<form method="post" action="passengerinfo.php">
+<div class="image">
+	<br>
+	<br>
+	<br>
+	<button class="book">
+	<img src="philair.jpg" height="200" width="200">
+	<div class="price">
+	<p>May 22,2019 </p>
+	<p> P 1,500.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+			
+</div>
+<br>
+<br>
+<br>
+
+
+<div class="image">
+	<button class="book">
+	<img src="cebupac.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 2,100.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+			
+</div>
+
+<div class="image">
+	<button class="book">
+	<img src="zest.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 2,350.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+			
+</div>
+
+<div class="image">
+	<button class="book">
+	<img src="airasia.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 2,800.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+			
+</div>
+
+
+<div class="image">
+	<button class="book">
+	<img src="philair.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 2,800.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+			
+</div>
+
+<div class="image">
+	<button class="book">
+	<img src="cebupac.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 2,900.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+			
+</div>
+
+<div class="image">
+	<button class="book">
+	<img src="zest.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 3,000.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+			
+</div>
+
+<div class="image">
+	<button class="book">
+	<img src="airasia.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 3,200.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+			
+</div>
+
+<div class="image">
+	<button class="book">
+	<img src="cebupac.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 3,500.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+			
+</div>
+
+
+<div class="image">
+	<button class="book">
+	<img src="airasia.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 3,500.00 </p>
+	<p>Destination: Cagayan De</p>
+	<p> Arrival: Palawan </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+</div>
+
+	<div class="image">
+	<button class="book">
+	<img src="cebupac.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 3,500.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+</div>
+			
+			<div class="image">
+	<button class="book">
+	<img src="cebupac.jpg" height="200" width="200">
+	<div class="price">
+	<p>11:00AM - 1:00PM</p>
+	<p> P 3,500.00 </p>
+	<p>Destination: Butuan City </p>
+	<p> Arrival: Manila </p>
+	<div class="part"><a href="passengerinfo.html"><i class="glyphicon glyphicon-book"></i>Book Now</a></div>
+	</div>
+</div>
+
+
+
+
+</form>
+</main>
+
+
+</body>
+</html>
